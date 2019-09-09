@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/info', function () {
+    phpinfo();
+});
+
+Route::get("luck/luckadd","Draw\\DrawController@luckadd");
+Route::post("luck/luckmedo","Draw\\DrawController@luckmedo");
